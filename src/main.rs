@@ -30,8 +30,8 @@ fn load_theme(tm_file: &str, enable_caching: bool) -> Theme {
 }
 
 fn find_files(dir: String) -> Vec<String> {
-    let extensions: [&str; 10] = [
-        "py", "go", "rs", "vue", "js", "java", "yaml", "proto", "yml", "json",
+    let extensions: [&str; 9] = [
+        "py", "go", "rs", "vue", "js", "java", "yaml", "proto", "yml",
     ];
     let mut files: Vec<String> = Vec::new();
     for entry in WalkDir::new(dir) {
